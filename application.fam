@@ -1,0 +1,12 @@
+App(
+    appid="switch_pro",
+    name="Switch Pro Controller",
+    apptype=FlipperAppType.EXTERNAL,
+    entry_point="switch_pro_app",
+    requires=["gui", "storage"],
+    stack_size=4 * 1024,
+    fap_category="USB",
+    fap_version="0.1",
+    fap_description="Acts as a wired Nintendo Switch Pro Controller over USB.",
+    sources=["switch_pro_app.c", "pro_usb.c"],
+)
